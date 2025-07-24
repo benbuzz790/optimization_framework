@@ -20,25 +20,39 @@ A comprehensive Object-Oriented Programming (OOP) optimization framework designe
 - **Clean OOP Architecture**: Modular, extensible design following SOLID principles
 - **ARM64 Windows Compatible**: No scipy dependency, works on all architectures
 
-## 📦 Installation
+## Installation
 
-### From PyPI (Recommended)
+### Install from GitHub (Recommended)
 ```bash
-pip install optimization-framework
-```
+# Install the latest version directly from GitHub
+pip install git+https://github.com/benbuzz790/optimization_framework.git
 
-### From Source
-```bash
-git clone https://github.com/optimization-framework/optimization-framework.git
-cd optimization-framework
+# Or clone and install in development mode
+git clone https://github.com/benbuzz790/optimization_framework.git
+cd optimization_framework
 pip install -e .
 ```
 
 ### Development Installation
 ```bash
-git clone https://github.com/optimization-framework/optimization-framework.git
-cd optimization-framework
-pip install -e ".[dev]"
+# For contributors and developers
+git clone https://github.com/benbuzz790/optimization_framework.git
+cd optimization_framework
+pip install -e ".[dev]"  # Includes development dependencies
+```
+
+### Requirements
+- Python 3.7+
+- No external dependencies (pure Python implementation)
+- Compatible with ARM64 Windows (no scipy required)
+
+### Verify Installation
+```python
+# Test the installation
+python -c "from optimization_framework import ContinuousVariable, Problem, GreedySearchSolver; print('Installation successful!')"      
+
+# Or run the examples
+python examples/basic_optimization.py
 ```
 
 ## 🏃‍♂️ Quick Start
