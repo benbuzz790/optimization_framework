@@ -20,7 +20,7 @@ import os
 # Add parent directory to path to import our optimization framework
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from optimization_framework_architecture import (
+from optimization_framework import (
     ContinuousVariable, IntegerVariable, BinaryVariable,
     ObjectiveFunction, ConstraintFunction, Problem, Solution
 )
@@ -458,7 +458,7 @@ def run_portfolio_optimization_example():
     # For this example, we'll create a mock solution to demonstrate analysis
 
     print(f"\n⚙️  Optimization would be solved here with:")
-    print(f"   solver = GeneticAlgorithmSolver(config={'population_size': 100, 'generations': 500})")
+    print("   solver = GeneticAlgorithmSolver(config={'population_size': 100, 'generations': 500})")
     print(f"   solution = solver.solve(problem)")
 
     # Create mock solution for demonstration

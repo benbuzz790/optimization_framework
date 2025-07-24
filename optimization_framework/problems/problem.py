@@ -1,4 +1,4 @@
-"""
+﻿"""
 Problem class for optimization framework.
 
 This module provides the Problem class that bundles objective functions,
@@ -110,7 +110,12 @@ class Problem:
             violation = constraint.violation_amount(variable_dict)
             violations[constraint.name] = violation
         return violations
-from typing import Dict, List, Any, Optional
-from ..utils.assertions import production_assert
-from ..variables import Variable
-from ..functions import ObjectiveFunction, ConstraintFunction
+
+    def get_variable_names(self) -> List[str]:
+        """
+        Get list of variable names in the problem.
+        
+        Returns:
+            List[str]: List of variable names
+        """
+        return [var.name for var in self.variables]

@@ -18,9 +18,9 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Import the optimization framework components
-from optimization_framework_architecture import (
+from optimization_framework import (
     ContinuousVariable, ObjectiveFunction, ConstraintFunction, 
-    Problem, Solution
+    Problem, Solution, IntegerVariable, BinaryVariable
 )
 
 def main():

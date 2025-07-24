@@ -1,0 +1,69 @@
+C:\Users\benbu\Code\repo_working\optimization_framework\examples> python portfolio_optimization....
+🚀 Starting Portfolio Optimization Example
+============================================================
+📈 Market Data Loaded:
+   Assets: 10
+   Expected Returns Range: 5.0% - 12.0%
+   Average Volatility: 21.3%
+🎯 Creating Optimization Problem...
+   Variables: 30
+   Constraints: 28
+⚙️  Optimization would be solved here with:
+   solver = GeneticAlgorithmSolver(config={'population_size': 100, 'generations': 500})
+   solution = solver.solve(problem)
+📊 Creating Mock Solution for Analysis Demo...
+🔍 Analyzing Portfolio Solution...
+================================================================================
+PORTFOLIO OPTIMIZATION RESULTS
+================================================================================
+📊 PORTFOLIO PERFORMANCE METRICS
+Expected Annual Return: 9.30%
+Portfolio Risk (Volatility): 14.55%
+Sharpe Ratio: 0.639
+Feasible Solution: ✅ Yes
+🎯 PORTFOLIO COMPOSITION
+Number of Assets: 9
+Largest Position: 20.00%
+Diversification Score: 0.865
+Total Transaction Costs: 0.0010
+💼 ASSET ALLOCATION
+--------------------------------------------------
+         JNJ:  20.00% |      Finance | E[R]:  8.00%
+        AAPL:  15.00% |   Technology | E[R]: 12.00%
+         PFE:  15.00% |       Energy | E[R]:  9.00%
+         JPM:  15.00% |     Consumer | E[R]: 10.00%
+       GOOGL:  10.00% |   Healthcare | E[R]: 11.00%
+         BAC:  10.00% |   Technology | E[R]:  9.00%
+         XOM:   5.00% |   Healthcare | E[R]:  7.00%
+         CVX:   5.00% |      Finance | E[R]:  8.00%
+          PG:   5.00% |       Energy | E[R]:  6.00%
+🏭 SECTOR ALLOCATION
+------------------------------
+     Technology:  25.00%
+        Finance:  25.00%
+         Energy:  20.00%
+     Healthcare:  15.00%
+       Consumer:  15.00%
+================================================================================
+💡 PORTFOLIO INSIGHTS
+----------------------------------------
+• Risk-adjusted return (utility): 0.085
+• Diversification across 5 sectors
+• Balanced risk-return profile with 0.64 Sharpe ratio
+• Conservative approach with max position of 20.0%
+✅ Portfolio Optimization Example Complete!
+🎓 LEARNING SUMMARY
+==================================================
+This example demonstrated:
+• Modern Portfolio Theory implementation
+• Multi-constraint optimization (budget, diversification, regulatory)
+• Mixed variable types (continuous weights, binary selection, integer lots)
+• Real-world financial modeling with risk-return tradeoffs
+• Comprehensive solution analysis and interpretation
+• Professional portfolio reporting
+🔧 Framework Integration Points:
+• Variable Dictionary Protocol for consistent data flow
+• NASA-style asserts for production-quality validation
+• Modular constraint design for complex business rules
+• Extensible objective functions for custom utility models
+• Complete solution tracking for audit and analysis

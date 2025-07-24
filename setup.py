@@ -254,41 +254,31 @@ setup(
     # Test suite configuration
     test_suite="tests",
     tests_require=extras_require["test"],
-
-    # Additional package metadata for modern setuptools
-    project_urls={
-        "Documentation": "https://optimization-framework.readthedocs.io/",
-        "Source Code": "https://github.com/optimization-framework/optimization-framework",
-        "Issue Tracker": "https://github.com/optimization-framework/optimization-framework/issues",
-        "Changelog": "https://github.com/optimization-framework/optimization-framework/blob/main/CHANGELOG.md",
-        "Funding": "https://github.com/sponsors/optimization-framework",
-        "Say Thanks!": "https://saythanks.io/to/optimization-framework",
-    },
 )
 
 # Post-installation message
 print("""
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                     Optimization Framework Installation                      ║
-╠══════════════════════════════════════════════════════════════════════════════╣
-║                                                                              ║
-║  Thank you for installing the Optimization Framework!                       ║
-║                                                                              ║
-║  This package provides a comprehensive OOP optimization framework           ║
-║  designed for ARM64 Windows environments where scipy is unavailable.       ║
-║                                                                              ║
-║  Key Features:                                                               ║
-║  • Multiple variable types (continuous, integer, binary)                    ║
-║  • Flexible constraint handling                                             ║
-║  • Multiple optimization algorithms                                         ║
-║  • NASA-style production validation                                         ║
-║  • Complete solution tracking                                               ║
-║                                                                              ║
-║  Quick Start:                                                                ║
-║    from optimization_framework import *                                      ║
-║                                                                              ║
-║  Documentation: https://optimization-framework.readthedocs.io/              ║
-║  Issues: https://github.com/optimization-framework/issues                   ║
-║                                                                              ║
-╚══════════════════════════════════════════════════════════════════════════════╝
+ΓòöΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòù
+Γòæ                     Optimization Framework Installation                      Γòæ
+ΓòáΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòú
+Γòæ                                                                              Γòæ
+Γòæ  Thank you for installing the Optimization Framework!                       Γòæ
+Γòæ                                                                              Γòæ
+Γòæ  This package provides a comprehensive OOP optimization framework           Γòæ
+Γòæ  designed for ARM64 Windows environments where scipy is unavailable.       Γòæ
+Γòæ                                                                              Γòæ
+Γòæ  Key Features:                                                               Γòæ
+Γòæ  ΓÇó Multiple variable types (continuous, integer, binary)                    Γòæ
+Γòæ  ΓÇó Flexible constraint handling                                             Γòæ
+Γòæ  ΓÇó Multiple optimization algorithms                                         Γòæ
+Γòæ  ΓÇó NASA-style production validation                                         Γòæ
+Γòæ  ΓÇó Complete solution tracking                                               Γòæ
+Γòæ                                                                              Γòæ
+Γòæ  Quick Start:                                                                Γòæ
+Γòæ    from optimization_framework import *                                      Γòæ
+Γòæ                                                                              Γòæ
+Γòæ  Documentation: https://optimization-framework.readthedocs.io/              Γòæ
+Γòæ  Issues: https://github.com/optimization-framework/issues                   Γòæ
+Γòæ                                                                              Γòæ
+ΓòÜΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓò¥
 """)
