@@ -1,0 +1,37 @@
+# Include package metadata files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+include pyproject.toml
+include setup.py
+include setup.cfg
+
+# Include documentation
+recursive-include docs *.rst *.md *.txt *.py
+recursive-include docs *.png *.jpg *.svg
+
+# Include examples
+recursive-include examples *.py *.md *.txt
+
+# Include type information
+include optimization_framework/py.typed
+recursive-include optimization_framework *.pyi
+
+# Exclude development and testing files
+exclude .gitignore
+exclude .pre-commit-config.yaml
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * *.so
+recursive-exclude * .DS_Store
+recursive-exclude tests *
+recursive-exclude .pytest_cache *
+recursive-exclude .coverage *
+recursive-exclude htmlcov *
+
+# Exclude development tools
+exclude tox.ini
+exclude .travis.yml
+exclude .github
+recursive-exclude .github *

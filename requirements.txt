@@ -1,0 +1,18 @@
+# Optimization Framework - Core Dependencies
+# Designed for ARM64 Windows compatibility without scipy
+# Core Python standard library dependencies (no external packages needed)
+# The framework is designed to use only built-in Python modules for maximum compatibility
+# Optional: For enhanced random number generation (pure Python)
+# random2>=1.0.1
+# Optional: For better performance profiling (pure Python)  
+# cProfile (built-in)
+# Note: This framework intentionally uses only Python standard library
+# to ensure compatibility with ARM64 Windows where scipy compilation fails.
+# All optimization algorithms are implemented from scratch using:
+# - math (built-in)
+# - random (built-in) 
+# - typing (built-in for Python 3.5+)
+# - abc (built-in)
+# - traceback (built-in)
+# - copy (built-in)
+# - collections (built-in)
